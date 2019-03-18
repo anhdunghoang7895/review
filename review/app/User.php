@@ -10,7 +10,7 @@ class User extends Model {
 		return $this->hasMany('App\Comment');
 	}
 	public function restaurants() {
-		return $this->hasMany('App\Restaurant');
+		return $this->belongsMany('App\Restaurant');
 	}
 	public function ratings() {
 		return $this->hasOne('App\Rating');
